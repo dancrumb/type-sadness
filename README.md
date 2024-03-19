@@ -32,3 +32,10 @@ const { sign } = pkg;
 ```
 
 This error is totally correct, because `jsonwebtoken` doesn't have a named export called `sign`. It has a default export, which is an object, which has a property called `sign`, whose value is the relevant function.
+
+If, on the other hand, you do the following:
+
+- remove `"type": "module"` from `package.json`
+- change `"module"` to `"CommonJS"` in `tsconfig.json`
+
+And then repeat the steps aboved, everything works as expected.
