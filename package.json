@@ -1,0 +1,20 @@
+{
+  "name": "type-sadness",
+  "version": "1.0.0",
+  "description": "An SSCCE to show the issues with DefinitelyTyped types in an ESM project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Rumney <dancrumb@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
+    "tsx": "^4.7.1"
+  }
+}
